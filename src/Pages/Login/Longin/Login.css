@@ -1,0 +1,16 @@
+form {
+  width: 35%;
+  margin: 50px auto;
+}
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+form input:focus {
+  outline: 0;
+  border: 1px solid #333;
+}
