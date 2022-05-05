@@ -14,3 +14,7 @@ form input:focus {
   outline: 0;
   border: 1px solid #333;
 }
+.error-message {
+  color: red;
+  margin: -15px 0 29px 0;
+}

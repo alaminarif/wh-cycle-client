@@ -1,8 +1,15 @@
+import { signOut } from "firebase/auth";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
 import CustomLink from "../CustomLink/CustomLink";
 import "./Header.css";
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+  const handleSingOut = () => {
+    signOut(auth);
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -26,21 +33,35 @@ const Header = () => {
               <CustomLink to="/" className="nav-link " aria-current="page">
                 Home
               </CustomLink>
-              <CustomLink to="/services" className="nav-link ms-2">
+              <CustomLink to="/inventory" className="nav-link ms-2">
                 Inventory
               </CustomLink>
               <CustomLink to="/blogs" className="nav-link ms-2">
                 Blogs
               </CustomLink>
-              <CustomLink to="/about" className="nav-link ms-2">
-                About Me
-              </CustomLink>
-              <CustomLink to="/signup" className="nav-link ms-2">
-                Signup
-              </CustomLink>
-              <CustomLink to="/signin" className="nav-link ms-2">
-                Signin
-              </CustomLink>
+              {user && (
+                <>
+                  {" "}
+                  <CustomLink to="/manageitems" className="nav-link ms-2">
+                    Manage Items
+                  </CustomLink>
+                  <CustomLink to="/additems" className="nav-link ms-2">
+                    Add Item
+                  </CustomLink>
+                  <CustomLink to="/myitems" className="nav-link ms-2">
+                    My Items
+                  </CustomLink>
+                </>
+              )}
+              {user ? (
+                <CustomLink to="/signin" onClick={handleSingOut} className="nav-link ms-2">
+                  SignOut
+                </CustomLink>
+              ) : (
+                <CustomLink to="/signin" className="nav-link ms-2">
+                  Sign in
+                </CustomLink>
+              )}
             </ul>
           </div>
         </div>
