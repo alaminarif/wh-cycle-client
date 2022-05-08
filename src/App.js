@@ -1,17 +1,19 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Header from "./Pages/Shared/Header/Header";
-import Inventory from "./Pages/Inventory/Inventory";
+
 import Blogs from "./Pages/Blogs/Blogs";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Home from "./Pages/Home/Home/Home";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
-import ManageItems from "./Pages/ManageItems/ManageItems";
+
 import AddItems from "./Pages/AddItems/AddItems";
 import MyItems from "./Pages/MyItems/MyItems";
 import Login from "./Pages/Login/Longin/Login";
 import Register from "./Pages/Login/Register/Register";
 import NotFount from "./Pages/Shared/NotFount/NotFount";
+import Inventory from "./Pages/Inventory/Inventory";
+import ManageItems from "./Pages/ManageItems/ManageItems/ManageItems";
 
 function App() {
   return (

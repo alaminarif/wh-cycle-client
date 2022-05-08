@@ -1,0 +1,19 @@
+.InventroyItem {
+  width: 300px;
+  margin: 15px;
+}
+.InventroyItem img {
+  width: 280px;
+  height: 190px;
+  border-radius: 5px;
+  border: 3px solid #ddd;
+}
+.InventroyItem p {
+  text-align: justify;
+}
+.InventroyItem button {
+  border: 0;
+}
+.InventroyItem .description {
+  font-size: 14px;
+}

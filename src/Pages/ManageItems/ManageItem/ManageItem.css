@@ -1,0 +1,20 @@
+.ManageItem {
+  width: 70%;
+  max-width: 50px auto;
+  box-sizing: border-box;
+}
+.ManageItem table,
+th,
+td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: center;
+}
+tr th:first-child,
+td:first-child {
+  width: 50%;
+}
+tr th:nth-child(3),
+td:nth-child(3) {
+  width: 10%;
+}
