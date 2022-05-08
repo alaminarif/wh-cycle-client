@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Inventory></Inventory>
       {/* <ManageItems></ManageItems> */}
-      <ManageInventory></ManageInventory>
+      {/* <ManageInventory></ManageInventory> */}
     </div>
   );
 };
