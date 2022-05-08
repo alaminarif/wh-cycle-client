@@ -12,7 +12,7 @@ const ManageInventoryItem = ({ manageInventoryItem }) => {
       <p className="description">{description}</p>
       <h6>Supplier Name: {supplierName}</h6>
       <p>{price}</p>
-      <p>{quantity}</p>
+      <p className="quantity">{quantity}</p>
       <button onClick={handleDelivered}>Delivered</button>
     </div>
   );

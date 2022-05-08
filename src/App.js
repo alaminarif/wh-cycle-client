@@ -1,12 +1,10 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Header from "./Pages/Shared/Header/Header";
-
 import Blogs from "./Pages/Blogs/Blogs";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Home from "./Pages/Home/Home/Home";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
-
 import AddItems from "./Pages/AddItems/AddItems";
 import MyItems from "./Pages/MyItems/MyItems";
 import Login from "./Pages/Login/Longin/Login";
@@ -18,7 +16,7 @@ import InventoryDetail from "./Pages/Home/InventoryDetail/InventoryDetail";
 
 function App() {
   return (
-    <div className="">
+    <div className="App">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

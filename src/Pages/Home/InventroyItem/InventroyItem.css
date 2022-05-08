@@ -1,8 +1,16 @@
 .InventroyItem {
   width: 300px;
   margin: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.InventroyItem:hover {
+  border: 2px solid #e02c6d;
+  border-radius: 8px;
 }
 .InventroyItem img {
+  margin-bottom: 12px;
   width: 280px;
   height: 190px;
   border-radius: 5px;
@@ -10,6 +18,10 @@
 }
 .InventroyItem p {
   text-align: justify;
+}
+.quantity {
+  margin-top: -7px;
+  color: #e02c6d;
 }
 .InventroyItem button {
   border: 0;

@@ -11,6 +11,15 @@ const ManageItems = () => {
   }, []);
   return (
     <div className="ManageItems">
+      <table className="ManageItem">
+        <tr>
+          <th className="name">Name</th>
+          <th className="price"> Price</th>
+          <th className="quantity">Quantity</th>
+          <th className="supplier"> Supplier</th>
+          <th className="option">Option</th>
+        </tr>
+      </table>
       {manageItems.map((manageItem) => (
         <ManageItem key={manageItem._id} manageItem={manageItem}></ManageItem>
       ))}

@@ -1,11 +1,33 @@
 .InventoryDetail {
-  width: 40%;
+  padding: 0 50px;
   margin: 50px auto;
-  border: 2px solid #ddd;
-  padding: 15px;
-  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  justify-items: center;
+  grid-gap: 52px;
 }
-.InventoryDetail .content {
+.inventory-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+}
+.inventory-card:hover {
+  border: 2px solid #e02c6d;
+  border-radius: 8px;
+}
+.InventoryDetail h5 {
+  margin-top: 20px;
+}
+.InventoryDetail button {
+  margin-right: 20px;
+  width: 200px;
+}
+.InventoryDetail form {
+  display: inline;
+}
+.InventoryDetail input {
+  width: 200px;
 }
 img {
   width: 100%;

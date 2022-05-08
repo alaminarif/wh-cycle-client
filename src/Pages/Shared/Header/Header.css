@@ -1,7 +1,10 @@
-.header nav a {
+nav {
+}
+.header nav a.nav-link {
+  font-size: 18px;
   margin-right: 20px;
   text-decoration: none;
-  color: black;
+  color: aliceblue;
 }
 .header nav a:hover {
   color: goldenrod;

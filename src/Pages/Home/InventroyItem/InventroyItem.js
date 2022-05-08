@@ -15,8 +15,10 @@ const InventroyItem = ({ inventroyItem }) => {
       <p className="description">{description}</p>
       <h6>Supplier Name: {supplierName}</h6>
       <p>{price}</p>
-      <p>{quantity}</p>
-      <button onClick={() => handleUpdate(_id)}>Stock Update</button>
+      <p className="quantity"> {quantity}</p>
+      <button className="button" onClick={() => handleUpdate(_id)}>
+        Stock Update
+      </button>
     </div>
   );
 };

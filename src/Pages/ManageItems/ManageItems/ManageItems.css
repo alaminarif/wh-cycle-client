@@ -1,3 +1,27 @@
 .ManageItems {
+  width: 50%;
   margin: 50px auto;
+}
+th {
+  padding: 6px;
+}
+
+.ManageItem .name {
+  width: 45%;
+}
+.ManageItem .price {
+  width: 60px;
+}
+.ManageItem .quantity {
+  width: 80px;
+  color: black;
+}
+.ManageItem .supplier {
+  width: 100px;
+}
+.ManageItem .option {
+  width: 120px;
+}
+.ManageItem .button {
+  padding: 6px 15px;
 }
