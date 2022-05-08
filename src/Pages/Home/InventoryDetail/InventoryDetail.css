@@ -1,0 +1,16 @@
+.InventoryDetail {
+  width: 40%;
+  margin: 50px auto;
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+}
+.InventoryDetail .content {
+}
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+p {
+  text-align: justify;
+}
