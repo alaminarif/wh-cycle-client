@@ -1,6 +1,8 @@
 .ManageItems {
   width: 50%;
   margin: 50px auto;
+  font-size: 18px;
+  color: #000;
 }
 th {
   padding: 6px;
@@ -13,7 +15,7 @@ th {
   width: 60px;
 }
 .ManageItem .quantity {
-  width: 80px;
+  width: 90px;
   color: black;
 }
 .ManageItem .supplier {

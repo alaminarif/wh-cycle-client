@@ -13,6 +13,7 @@ import NotFount from "./Pages/Shared/NotFount/NotFount";
 import Inventory from "./Pages/Inventory/Inventory";
 import ManageItems from "./Pages/ManageItems/ManageItems/ManageItems";
 import InventoryDetail from "./Pages/Home/InventoryDetail/InventoryDetail";
+import ManageInventory from "./Pages/Home/ManageInventory/ManageInventory";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/inventory" element={<Inventory></Inventory>}></Route>
+        <Route path="/manageInventory" element={<ManageInventory></ManageInventory>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route
           path="/inventoryItem/:inventoryId"

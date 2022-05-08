@@ -11,11 +11,15 @@ const InventroyItem = ({ inventroyItem }) => {
   return (
     <div className="InventroyItem">
       <img src={image} alt="" />
-      <h5>{name}</h5>
+      <h5>
+        {" "}
+        <span>{name} </span>
+        <span>{quantity}</span>{" "}
+      </h5>
       <p className="description">{description}</p>
       <h6>Supplier Name: {supplierName}</h6>
+
       <p>{price}</p>
-      <p className="quantity"> {quantity}</p>
       <button className="button" onClick={() => handleUpdate(_id)}>
         Stock Update
       </button>

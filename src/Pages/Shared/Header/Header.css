@@ -1,10 +1,14 @@
-nav {
+#nav {
+  padding-top: 50px;
+  width: 1200px;
+  margin: 0 auto;
 }
-.header nav a.nav-link {
+#header-text a {
   font-size: 18px;
   margin-right: 20px;
   text-decoration: none;
-  color: aliceblue;
+  text-transform: uppercase;
+  color: #000;
 }
 .header nav a:hover {
   color: goldenrod;

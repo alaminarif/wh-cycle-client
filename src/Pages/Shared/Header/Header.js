@@ -4,6 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import CustomLink from "../CustomLink/CustomLink";
 import "./Header.css";
+import logo from "../../../Images/loogo-removebg-preview.png";
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -12,10 +13,10 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav id="nav" className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <CustomLink to="/home" className="navbar-brand text-light">
-            Dantario
+          <CustomLink to="/home" className="navbar-brand ">
+            <img src={logo} alt="" />
           </CustomLink>
           <button
             className="navbar-toggler"
@@ -29,8 +30,8 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <CustomLink to="/" className="nav-link " aria-current="page">
+            <ul id="header-text" className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <CustomLink to="/" className="nav-link fz" aria-current="page">
                 Home
               </CustomLink>
               <CustomLink to="/inventory" className="nav-link ms-2">

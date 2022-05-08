@@ -19,10 +19,21 @@
 .InventroyItem p {
   text-align: justify;
 }
-.quantity {
+.InventroyItem h5 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.InventroyItem h5 span:last-child {
+  background-color: #e02c6d;
+  color: #ddd;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* .quantity {
   margin-top: -7px;
   color: #e02c6d;
-}
+} */
 .InventroyItem button {
   border: 0;
 }

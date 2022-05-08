@@ -10,7 +10,7 @@ const ManageInventoryItem = ({ manageInventoryItem }) => {
       <img src={image} alt="" />
       <h5>{name}</h5>
       <p className="description">{description}</p>
-      <h6>Supplier Name: {supplierName}</h6>
+      <h6>Supplier: {supplierName}</h6>
       <p>{price}</p>
       <p className="quantity">{quantity}</p>
       <button onClick={handleDelivered}>Delivered</button>

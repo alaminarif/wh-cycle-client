@@ -1,0 +1,27 @@
+.Banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.Banner .button {
+  width: 200px;
+}
+.Banner h1 {
+  margin-bottom: 20px;
+  font-size: 51px;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.Banner p {
+  width: 70%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
