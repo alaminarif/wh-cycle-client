@@ -5,17 +5,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
+  /* min-height: 100vh; */
 }
 .banner-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .Banner .button {
-  width: 200px;
+  width: 70%;
 }
 .Banner h1 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 4vw;
   font-weight: 700;
   color: #3a3a3a;
@@ -25,6 +26,10 @@
   font-size: 20px;
   margin-bottom: 20px;
 }
+.Banner img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1000px) {
   .Banner {
     grid-template-columns: 1fr;

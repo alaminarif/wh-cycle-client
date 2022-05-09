@@ -56,7 +56,7 @@ const Header = () => {
               )}
               {user ? (
                 <CustomLink to="/signin" onClick={handleSingOut} className="nav-link ms-2">
-                  SignOut
+                  Sign Out
                 </CustomLink>
               ) : (
                 <CustomLink to="/signin" className="nav-link ms-2">

@@ -5,7 +5,8 @@
     "shortDes": "Great customer service. Thanks for",
     "description": "Great customer service. Thanks for getting those tires on order for me Jeff. My son really appreciated them.",
     "name": "Shefali",
-    "date": ""
+    "date": "14-04-2022",
+    "img": "https://i.ibb.co/TBvjnSd/player-1.png"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "shortDes": "The staff are seasoned bike",
     "description": "The staff are seasoned bike riders themselves. They provide great technical knowledge with real world experience",
     "name": "Shakil",
-    "date": ""
+    "date": "28-03-2022",
+    "img": "https://i.ibb.co/WGFDvsT/player-2.png"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "shortDes": "Thanks for your help in",
     "description": "Thanks for your help in getting my equipment to me quickly and just as I had ordered!",
     "name": "Khadija",
-    "date": ""
+    "date": "25-01-2022",
+    "img": "https://i.ibb.co/2yXmKc0/player-4.png"
   },
   {
     "id": 5,
@@ -29,7 +32,8 @@
     "shortDes": "Good service 👍 and good",
     "description": "Good service 👍 and good products for great price in all range.",
     "name": "Rabby",
-    "date": ""
+    "date": "25-06-2022",
+    "img": "https://i.ibb.co/zmpSWtg/player-5.png"
   },
   {
     "id": 4,
@@ -37,7 +41,8 @@
     "shortDes": "ood products good customer service",
     "description": "Good products good customer service Wide selection Great deals",
     "name": "Shefali",
-    "date": "Halim"
+    "date": "21-02-2022",
+    "img": "https://i.ibb.co/G9Gz0DL/player-3.png"
   },
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "shortDes": "Ray was a great help",
     "description": "Ray was a great help with picking out the perfect helmet. He knows his stuff and is able to sell you on every detail!",
     "name": "Al-amin",
-    "date": ""
+    "date": "12-05-2022",
+    "img": "https://i.ibb.co/WVTRSFM/player-6.png"
   }
 ]

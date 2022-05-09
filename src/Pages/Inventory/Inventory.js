@@ -12,11 +12,14 @@ const Inventory = () => {
       .then((data) => setInventory(data));
   }, []);
   return (
-    <div className="Inventory">
-      {inventory.map((inventroyItem) => (
-        <InventroyItem key={inventroyItem._id} inventroyItem={inventroyItem}></InventroyItem>
-      ))}
-    </div>
+    <>
+      <h2>Inventory</h2>
+      <div className="Inventory">
+        {inventory.map((inventroyItem) => (
+          <InventroyItem key={inventroyItem._id} inventroyItem={inventroyItem}></InventroyItem>
+        ))}
+      </div>
+    </>
   );
 };
 

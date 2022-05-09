@@ -14,7 +14,7 @@ const Banner = () => {
         <p>Live a healthier and more active lifestyle, all riders welcome!</p>
         <button className="button" onClick={handleAll}>
           {" "}
-          Shop All Cycle
+          Warehouse All Cycle
         </button>
       </div>
       <div className="image">
