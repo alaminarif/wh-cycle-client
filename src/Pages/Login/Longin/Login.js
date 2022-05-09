@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../../firebase.init";
@@ -11,7 +11,7 @@ import "./Login.css";
 const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
+  const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
   const from = location.state?.from?.pathname || "/";
   const [userInfo, setUserInfo] = useState({
     email: "",

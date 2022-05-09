@@ -3,7 +3,7 @@ import "./ManageItem.css";
 
 const ManageItem = ({ manageItem: manageItem }) => {
   const { _id, name, image, description, supplierName, price, quantity } = manageItem;
-  const [deleteds, setDeleted] = useState({});
+  // const [deleteds, setDeleted] = useState({});
   const handleDelete = (id) => {
     const proceed = window.confirm("are you sure?");
     if (proceed) {

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./InventoryDetail.css";
 
 const InventoryDetail = () => {
   const { inventoryId } = useParams();
   const navigate = useNavigate();
   const [inventory, setInventory] = useState({});
-  const [count, setCount] = useState(0);
-  // const { _id, name, image, description, supplierName, price, quantity } = inventroy;
+  // const [count, setCount] = useState(0);
   useEffect(() => {
     const url = `https://fast-tundra-99003.herokuapp.com/inventory/${inventoryId}`;
     fetch(url)

@@ -1,0 +1,15 @@
+.Blogs table,
+.Blogs .content {
+  width: 70%;
+  margin: 50px auto;
+}
+.Blogs table th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.Blogs h3 {
+  text-transform: capitalize;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
