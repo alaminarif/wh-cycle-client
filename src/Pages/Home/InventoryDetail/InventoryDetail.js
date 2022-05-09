@@ -9,7 +9,7 @@ const InventoryDetail = () => {
   const [count, setCount] = useState(0);
   // const { _id, name, image, description, supplierName, price, quantity } = inventroy;
   useEffect(() => {
-    const url = `http://localhost:5000/inventory/${inventoryId}`;
+    const url = `https://fast-tundra-99003.herokuapp.com/inventory/${inventoryId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setInventory(data));

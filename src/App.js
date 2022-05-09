@@ -50,3 +50,7 @@ function App() {
 export default App;
 
 // https://assigment-11-c7971.web.app/
+
+// https://stackoverflow.com/questions/72170428/nodmon-the-term-nodmon-is-not-recognized-as-a-name-of-a-cmdlet
+
+// https://fast-tundra-99003.herokuapp.com/

@@ -7,7 +7,7 @@ const ManageItems = () => {
   const navigate = useNavigate();
   const [manageItems, setManageItems] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/manageItems")
+    fetch("https://fast-tundra-99003.herokuapp.com/manageItems")
       .then((res) => res.json())
       .then((data) => setManageItems(data));
   }, []);

@@ -7,7 +7,7 @@ import "./Inventory.css";
 const Inventory = () => {
   const [inventory, setInventory] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/inventory")
+    fetch("https://fast-tundra-99003.herokuapp.com/inventory")
       .then((res) => res.json())
       .then((data) => setInventory(data));
   }, []);

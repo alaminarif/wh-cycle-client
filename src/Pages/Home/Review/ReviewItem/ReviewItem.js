@@ -10,7 +10,11 @@ const ReviewItem = ({ reviewItem }) => {
         <span>{rating}</span> <i>{date}</i>
       </p>
       <h4>{shortDes}</h4>
-      <i>{description}</i>
+
+      <span style={{ color: "#e02c6d" }}>
+        {" "}
+        <i style={{ color: "#666" }}>{description}</i> more...
+      </span>
     </div>
   );
 };

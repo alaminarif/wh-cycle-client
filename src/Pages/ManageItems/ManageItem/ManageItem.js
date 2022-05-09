@@ -8,7 +8,7 @@ const ManageItem = ({ manageItem: manageItem }) => {
     const proceed = window.confirm("are you sure?");
     if (proceed) {
       console.log("id :", id);
-      const url = `http://localhost:5000/manageItems/${id}`;
+      const url = `https://fast-tundra-99003.herokuapp.com/manageItems/${id}`;
       fetch(url, {
         method: "DELETE",
       })

@@ -3,7 +3,7 @@ import ManageInventoryItem from "../ManageInventoryItem/ManageInventoryItem";
 const ManageInventory = () => {
   const [manageInventory, setManageInventory] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/ManageInventory")
+    fetch("https://fast-tundra-99003.herokuapp.com/ManageInventory")
       .then((res) => res.json())
       .then((data) => setManageInventory(data));
   }, []);
