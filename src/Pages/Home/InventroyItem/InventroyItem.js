@@ -17,7 +17,7 @@ const InventroyItem = ({ inventroyItem }) => {
         <span>{quantity}</span>{" "}
       </h5>
       <p className="description">{description}</p>
-      <h6>Supplier Name: {supplierName}</h6>
+      <h6>Supplier: {supplierName}</h6>
 
       <p>{price}</p>
       <button className="button" onClick={() => handleUpdate(_id)}>
