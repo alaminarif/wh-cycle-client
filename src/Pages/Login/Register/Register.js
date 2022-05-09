@@ -63,21 +63,24 @@ const Register = () => {
       navigate(from);
     }
   }, [user]);
-
+  const handleRegister = () => {
+    navigate("/signin");
+  };
   return (
     <div>
       <form onSubmit={handleForm}>
+        <h3>Sign up</h3>
         <input onChange={handleEmail} type="text" id="" placeholder="Email" />
         {errors?.email && <p className="error-message">{errors.email}</p>}
         <input onChange={handlePassword} type="password" name="password" id="" placeholder="Password" />
         <input onChange={confirmPassword} type="password" name="password" id="" placeholder="Confirm Password" />
         {errors?.password && <p className="error-message">{errors.password}</p>}
-        <input type="submit" value="Sign up" />
+        <input className="button" type="submit" value="Sign up" />
 
         {/* {error && <p className="error-message">{error}</p>} */}
         {hookError && <p className="error-message"> {hookError?.message} </p>}
         <p>
-          Already sign Up? <Link to="/signin">Login</Link>
+          Already sign Up? <span onClick={handleRegister}>Sign in</span>
         </p>
         <SocialLogin></SocialLogin>
       </form>

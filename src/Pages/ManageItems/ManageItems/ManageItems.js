@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ManageItem from "../ManageItem/ManageItem";
 import "./ManageItems.css";
 
 const ManageItems = () => {
+  const navigate = useNavigate();
   const [manageItems, setManageItems] = useState([]);
   useEffect(() => {
     fetch("http://localhost:5000/manageItems")
       .then((res) => res.json())
       .then((data) => setManageItems(data));
   }, []);
+  const handleNewItem = () => {
+    navigate("/AddItems");
+  };
   return (
     <div className="ManageItems">
       <table className="ManageItem">
@@ -23,6 +28,9 @@ const ManageItems = () => {
       {manageItems.map((manageItem) => (
         <ManageItem key={manageItem._id} manageItem={manageItem}></ManageItem>
       ))}
+      <button className="button" onClick={handleNewItem}>
+        Add new Item
+      </button>
     </div>
   );
 };

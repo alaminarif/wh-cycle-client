@@ -27,3 +27,6 @@ th {
 .ManageItem .button {
   padding: 6px 15px;
 }
+.ManageItems .button {
+  margin: 20px 0;
+}

@@ -13,7 +13,9 @@ const ManageInventoryItem = ({ manageInventoryItem }) => {
       <h6>Supplier: {supplierName}</h6>
       <p>{price}</p>
       <p className="quantity">{quantity}</p>
-      <button onClick={handleDelivered}>Delivered</button>
+      <button className="button" onClick={handleDelivered}>
+        Delivered
+      </button>
     </div>
   );
 };

@@ -1,18 +1,39 @@
 form {
   width: 35%;
+  padding: 20px;
   margin: 50px auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+form h3 {
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 form input {
   display: block;
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  border-radius: 10px;
+  border: 1px solid #e02c6d;
+}
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e02c6d;
+}
+form .button {
+  border-radius: 10px;
 }
 form input:focus {
   outline: 0;
   border: 1px solid #333;
+}
+form span {
+  color: #e02c6d;
 }
 .error-message {
   color: red;

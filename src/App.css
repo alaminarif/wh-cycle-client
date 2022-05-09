@@ -1,3 +1,20 @@
 .App {
   background-color: aliceblue;
 }
+.button {
+  border: 0;
+  color: white;
+  background-color: #e02c6d;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 25px;
+  display: inline-block;
+  border-radius: 40px;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}

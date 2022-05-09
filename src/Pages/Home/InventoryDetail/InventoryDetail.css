@@ -24,7 +24,11 @@
   width: 200px;
 }
 .InventoryDetail form {
-  display: inline;
+  width: 90%;
+}
+.InventoryDetail form input {
+  width: 80%;
+  border-radius: 26px;
 }
 .InventoryDetail input {
   width: 200px;

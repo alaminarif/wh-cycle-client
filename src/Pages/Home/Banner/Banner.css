@@ -16,7 +16,7 @@
 }
 .Banner h1 {
   margin-bottom: 20px;
-  font-size: 51px;
+  font-size: 4vw;
   font-weight: 700;
   color: #3a3a3a;
 }
@@ -24,4 +24,9 @@
   width: 70%;
   font-size: 20px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .Banner {
+    grid-template-columns: 1fr;
+  }
 }

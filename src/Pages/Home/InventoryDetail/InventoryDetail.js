@@ -14,9 +14,7 @@ const InventoryDetail = () => {
       .then((res) => res.json())
       .then((data) => setInventory(data));
   }, []);
-  const handleDelivered = (count) => {
-    setCount(count - 1);
-  };
+  const handleDelivered = () => {};
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -34,7 +32,7 @@ const InventoryDetail = () => {
           <p>{inventory.price}</p>
           <p className="quantity">{inventory.quantity}</p>
 
-          <button className="button" onClick={() => handleDelivered(inventory.quantity)}>
+          <button className="button" onClick={handleDelivered}>
             Delivered
           </button>
           <button className="button" onClick={handleManageInventory}>

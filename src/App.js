@@ -36,6 +36,7 @@ function App() {
         <Route path="/manageitems" element={<ManageItems></ManageItems>}></Route>
         <Route path="/additems" element={<AddItems></AddItems>}></Route>
         <Route path="/myitems" element={<MyItems></MyItems>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signin" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFount></NotFount>}></Route>
@@ -47,3 +48,5 @@ function App() {
 }
 
 export default App;
+
+// https://assigment-11-c7971.web.app/

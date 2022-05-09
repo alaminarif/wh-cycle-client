@@ -50,7 +50,6 @@ const Login = () => {
   };
 
   const handleForm = (event) => {
-    console.log(userInfo);
     event.preventDefault();
     signInWithEmailAndPassword(userInfo.email, userInfo.password);
   };
@@ -59,17 +58,21 @@ const Login = () => {
       navigate(from);
     }
   }, [user]);
+  const handleLogin = () => {
+    navigate("/signup");
+  };
 
   return (
     <div>
       <form onSubmit={handleForm}>
+        <h3>Sign in</h3>
         <input onChange={handleEmail} type="text" id="" placeholder="Email" />
         {errors?.email && <p className="error-message">{errors.email}</p>}
         <input onChange={handlePassword} type="password" name="password" id="" placeholder="Password" />
         {errors?.password && <p className="error-message">{errors.password}</p>}
-        <input type="submit" value="Signin" />
+        <input className="button" type="submit" value="Sign in" />
         <p>
-          need an account? <Link to="/signup">please sign up</Link>
+          need an account? <span onClick={handleLogin}>please sign up</span>
         </p>
         <p>
           forget password?{" "}

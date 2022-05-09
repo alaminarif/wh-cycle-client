@@ -27,10 +27,10 @@ const SocialLogin = () => {
         <div style={{ height: "1px", backgroundColor: "#999" }} className="w-50 "></div>
       </div>
       <p className="text-danger">{errorElement}</p>
-      <div className="">
-        <button onClick={() => signInWithGoogle()} style={{ backgroundColor: "#04aa6d" }} className="btn btn-primary w-100 d-block ">
+      <div>
+        <button onClick={() => signInWithGoogle()} className=" button w-100 d-block ">
           <img className="text-light" style={{ width: "30px" }} src={Google} alt="" />
-          <span className="px-2 text-light"> Google Signin</span>
+          <span className="px-2 text-light"> Google Sign in</span>
         </button>
       </div>
     </div>
