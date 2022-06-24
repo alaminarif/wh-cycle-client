@@ -5,7 +5,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
-
 import "./Login.css";
 
 const Login = () => {
@@ -13,10 +12,12 @@ const Login = () => {
   const location = useLocation();
   const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
   const from = location.state?.from?.pathname || "/";
+
   const [userInfo, setUserInfo] = useState({
     email: "",
     password: "",
   });
+
   const [errors, setErrors] = useState({
     email: "",
     password: "",
